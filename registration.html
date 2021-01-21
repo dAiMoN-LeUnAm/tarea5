@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NYSL Soccer</title>
+        <link rel="shortcut icon" href="assets/nysl_logo.png">
+        <link rel="stylesheet" href="estilos/nysl_3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+        
+    </head>
+
+    <body>
+        <div>
+            <img src="assets/design1_image1.jpg" alt="Imagen1" class="imagenencabezado"> 
+            <h1 class="encabezado__titulo">NORTHSIDE YOUTH SOCCER LEAGUE</h1>  
+        </div>
+
+        <nav class="nav">     
+                <h2>
+                    Registration
+                    <img src="assets/nysl_logo.png" alt="nysl_logo" class="nav__logo1">
+                </h2>
+        </nav>
+
+
+        <header class="header">
+            <ul  class="header_link">
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="aboutNYSL.html"> About NYSL</a> </li>
+                <li> <a href="game_information.html"> Game Information</a> </li>
+                <li> <a href="reglas.html"> Rules and Policies</a> </li>
+                <li> <a href="reglas.html"> Registration</a> </li>
+                <li> <a href="contact.html"> Contact</a> </li>
+             </ul>
+        </header>
+        
+            <form class="form" action="Show_data.html" method="GET">
+                <div class="form1">
+                    <h1>Registration Form</h1>
+                </div>
+                <br>
+                <div class="form2">
+
+                    <label for="First_Name"><b>Player’s First Name:</b></label>
+                    <input type="text" name="First_Name" placeholder="Enter First Name" class="First_Name">
+        
+                    <label for="Last_Name"><b>Last Name:</b></label>
+                    <input type="text" name="Last_Name" placeholder="Enter Last Name" class="Last_Name">
+        
+                    <br><br>
+        
+                    <label for="Street_Address"><b>Street Address:</b></label>
+                    <input type="text" name="Street_Address" placeholder="Enter Street Address" class="Street_Address">
+        
+                    <br><br>
+                    
+                    <label for="City"><b>City:</b></label>
+                    <input type="text" name="City" placeholder="Enter City" class="City">
+                    
+                    <label for="Zip_Code"><b>Zip Code:</b></label>
+                    <input type="text" name="Zip_Code" placeholder="Enter Zip Code" class="Zip_Code">
+        
+                    <br><br>
+        
+                    <label for="Birth_Date"><b>Birth Date:</b></label>
+                    <input type="date" name="Birth_Date" placeholder="mm/dd/yyyy" class="Birth_Date">
+        
+                
+                        <label for="Gender"><b>Gender: </b></label>
+                        <select class="CBX" name="Gender" id="Gender">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        
+                        </select>
+                    
+
+                    <label for="Grade"><b>Grade:</b></label>
+                    <select class="CBX" name="Grade" id="Grade">
+                        <option value="Pre-School">Pre-School</option>
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option>
+                        <option value="5th">5th</option>
+                    </select>
+        
+                    <div>
+                        <h2>Which elementary school do you live near?</h2>
+                        <label for="School"><b>Closest School:</b></label>
+
+                        <select class="CBX" name="School" id="School" >
+                            <option value="AJ_Katzenmaier">AJ Katzenmaier</option>
+                            <option value="Greenbay">Greenbay</option>
+                            <option value="Howard_A_Yeager">Howard A Yeager</option>
+                            <option value="Marjorie_P_Hart">Marjorie P Hart</option>
+                            <option value="North_Elementary">North Elementary</option>
+                            <option value="South_Elementary">South Elementary</option>
+                        </select>
+
+                    </div>
+        
+                    <div>
+                        <h2>What position(s) do you normally play? (check all that apply)</h2>
+                    </div>
+                    <input type="checkbox">
+                    <label for="Forward"><b>Forward</b></label>
+        
+                    <input type="checkbox">
+                    <label for="Midfield"><b>Midfield</b></label>
+                    <br><br>
+                    <input type="checkbox">
+                    <label for="Defense"><b>Defense</b></label>
+        
+                    <input type="checkbox">
+                    <label for="Goalkeeper"><b>Goalkeeper</b></label>
+        
+                    
+                    <div>
+                        <h2>Uniform Size</h2>
+                    </div>
+
+                    <input type="radio" name="Uniform_Size" id="Uniform_Size">
+                    <label for="Youth_Small"><b>Youth Small</b></label>
+
+                    <input type="radio" name="Uniform_Size" id="Uniform_Size">
+                    <label for="Youth_Medium"><b>Youth Medium</b></label>
+                
+                    <input type="radio" name="Uniform_Size" id="Uniform_Size">
+                    <label for="Youth_Large"><b>Youth Large</b></label>
+                    <br><br>
+                    <input type="radio" name="Uniform_Size" id="Uniform_Size">
+                    <label for="Small"><b>Small</b></label>
+
+                    <input type="radio" name="Uniform_Size" id="Uniform_Size">
+                    <label for="Medium"><b>Medium</b></label>
+                    
+                    <input type="radio" name="Uniform_Size" id="Uniform_Size">
+                    <label for="Large"><b>Large</b></label>
+
+                    <input type="radio" name="Uniform_Size" id="Uniform_Size">
+                    <label for="Extra-Large"><b>Extra-Large</b></label>
+        
+                    <br>
+        
+                    <fieldset>
+                        <legend class="legend"><h2>Permission to Play</h2></legend>
+                        <label>
+                            I, the parent or guardian of the minor registrant, 
+                            agree that the registrant and I will abide by all 
+                            the rules of the Northside Youth Soccer League (NYSL). 
+                            In recognizing the possibility of physical injury 
+                            associated with soccer and in consideration for the “League” 
+                            accepting the registrant for its soccer programs and activities, 
+                            I hereby release, discharge, and/or otherwise indemnify NYSL, 
+                            their employees and associated personnel and volunteers,
+                            including the facilities used for practices and games, 
+                            against any claim by or on behalf of the registrant as a 
+                            result of the registrant’s participation in the programand/orbeing 
+                            transported to or from NYSL sponsored activities,which transportation.
+                            <br><br>
+                            Entering your name below, I herebyagree andauthorizethe above.In addition, 
+                            entering your name below, Ialso acknowledge that I have read the cancellation 
+                            policy and agree to its terms.
+                        </label>
+        
+                        <br><br>
+        
+                        <label>
+                            <b>Parent/GuardianSignature:</b>
+                            <input type="text" placeholder="Parent/GuardianSignature" name="Parent_GuardianSignature" class="Parent_GuardianSignature">
+                        </label>
+        
+                        <label>
+                            <b>Date:</b>
+                            <input type="date" placeholder="mm/dd/yyyy" name="Date" class="Date">
+                        </label>
+        
+                    </fieldset>
+                    
+                    <br>
+                    <input class="boton" type="submit" value="Send Registration">
+
+                </div>
+            </form>
+
+
+        <footer>
+            <div class="footerregistration">
+              <div class="footersocial">
+                  <ul>
+                      <li class="social"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                      <li class="social"><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                      <li class="social"><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                      <li class="social"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                  </ul>
+              </div>
+
+              <div class="links">
+                <ul>
+                    <li class="links1"><a href="index.html">Home</a></li>
+                    <li class="links1"><a href="aboutNYSL.html">About NYSL</a></li>
+                    <li class="links1"><a href="game_information.html">Game Information</a></li>
+                    <li class="links1"><a href="reglas.html">Rules and Policies</a></li>
+                    <li class="links1"><a href="registration.html">Registration</a></li>
+                    <li class="links1"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="fuera">
+                Copyright &copy; dAiMoN. All Rights Reser 2021
+            </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
